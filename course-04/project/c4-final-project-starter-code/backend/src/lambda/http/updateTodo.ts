@@ -22,6 +22,7 @@ export const handler = middy(
         updated
       })
     }
+  }
 )
 
 handler

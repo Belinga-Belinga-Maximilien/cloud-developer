@@ -1,5 +1,5 @@
 # TODO: Change the name of the org 
-org: sudkul
+org: belingamaximilien
 app: serverless-todo-app
 service: serverless-todo-app
 
@@ -84,7 +84,7 @@ functions:
           cors: true
           authorizer: Auth
           request:
-            schemas:
+            schema:
               application/json: ${file(models/create-todo-model.json)}
 
   # TODO: Configure this function
@@ -98,7 +98,7 @@ functions:
           cors: true
           authorizer: Auth
           request:
-            schemas:
+            schema:
               application/json: ${file(models/update-todo-model.json)}
 
   # TODO: Configure this function
